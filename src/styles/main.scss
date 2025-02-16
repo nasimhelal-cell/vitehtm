@@ -2,39 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-// Custom SCSS styles
-:root {
-  --primary-color: #4f46e5;
-  --secondary-color: #818cf8;
-}
-
 // Custom components using @apply
 @layer components {
   .btn {
     @apply px-4 py-2 rounded-md transition-colors;
-    span {
-      @apply text-red-500 hover:text-blue-600;
-    }
     
     &-primary {
-      @apply bg-indigo-600 text-white hover:bg-indigo-700;
+      @apply bg-primary text-white hover:bg-primary/80;
     }
     
     &-secondary {
       @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
-    }
-  }
-
-  .section-content {
-    @apply container mx-auto px-4 py-8 bg-red-500;
-    h1{
-      @apply text-2xl font-semibold text-gray-800 dark:text-white mb-4;
-    }
-    p{
-      @apply text-gray-600 dark:text-gray-300;
-    }
-    ul{
-      @apply space-y-2 text-gray-600 dark:text-gray-300;
     }
   }
 }

@@ -10,6 +10,10 @@ export default {
         center: true,
         padding: '1rem',
       },
+      colors: {
+        primary: '#4f46e5',
+        secondary: '#818cf8',
+      },
     },
   },
   darkMode: 'media',
